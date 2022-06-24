@@ -14,17 +14,17 @@ public class CrearCuenta {
 	}
 	
 	public void ingresarDatosCuenta(String nombreUsuario, String contrasena) {
-		WebElement userName = driver.findElement(By.id("spree_user_email"));
-		userName.sendKeys(nombreUsuario);
+		WebElement inputEmail = driver.findElement(By.id("spree_user_email"));
+		inputEmail.sendKeys(nombreUsuario);
 		
-		WebElement password = driver.findElement(By.id("spree_user_password"));
-		password.sendKeys(contrasena);
+		WebElement inputPassword = driver.findElement(By.id("spree_user_password"));
+		inputPassword.sendKeys(contrasena);
 		
-		WebElement passwordConf = driver.findElement(By.id("spree_user_password_confirmation"));
-		passwordConf.sendKeys(contrasena);
+		WebElement inputPasswordConf = driver.findElement(By.id("spree_user_password_confirmation"));
+		inputPasswordConf.sendKeys(contrasena);
 		
-		WebElement createAcc = driver.findElement(By.name("commit"));
-		createAcc.click();
+		WebElement btnCreateAcc = driver.findElement(By.name("commit"));
+		btnCreateAcc.click();
 	}
 	
 }

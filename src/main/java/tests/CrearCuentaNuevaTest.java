@@ -15,20 +15,19 @@ public class CrearCuentaNuevaTest {
 	String baseUrl = "https://demosite.appvance.com/";
 	WebDriver driver;
 	
-	private String correo, contrasena;
+	private String correo = "fernando.jerezano123@gmai.com";
+	private String contrasena = "Qwerty12";
 	
 	@Test 
 	public void crearCuentaNueva() {
-		correo = "fernando.jerezano123@gmai.com";
-		contrasena = "Qwerty12";
 		
 		driver.findElement(By.xpath("//a[@href='/']")).click();
 		
 		WebElement linkLogin = driver.findElement(By.xpath("//a[@href='/login']"));
 		linkLogin.click();
 		
-		WebElement signUp = driver.findElement(By.xpath("//a[@href='/signup']"));
-		signUp.click();
+		WebElement linkSignUp = driver.findElement(By.xpath("//a[@href='/signup']"));
+		linkSignUp.click();
 		
 		CrearCuenta crearCuenta = new CrearCuenta(driver);
 		crearCuenta.ingresarDatosCuenta(correo, contrasena);	

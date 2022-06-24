@@ -51,22 +51,33 @@ public class RealizarCompraSinRegistroTest {
 		
 		RealizarCompra realizarCompraSinRegistro = new RealizarCompra(driver);
 		
+		//Thread.sleep(2000);
+		
 		realizarCompraSinRegistro.hacerCheckout();
+		
+		//Thread.sleep(2000);
 		
 		WebElement inputEmail = driver.findElement(By.id("order_email"));
 		inputEmail.sendKeys(email);
 		
+		//Thread.sleep(2000);
+		
 		WebElement btnContinue = driver.findElement(By.xpath("//input[@value='Continue']"));
 		btnContinue.click();
 		
+		//Thread.sleep(2000);
+		
 		realizarCompraSinRegistro.ingresarDatosDireccion(firstName, lastName, streetAddress, city, countryId, stateId, zip, phone);
+		
+		//Thread.sleep(2000);
 		realizarCompraSinRegistro.ingresarDatosEntrega(shippingMethod);
+		
+		//Thread.sleep(2000);
 		realizarCompraSinRegistro.ingresarDatosPagoTarjeta(nameOnCard, cardNumber, expirationMonth, expirationYear, cvv);
 		
-		driver.findElement(By.name("commit")).click();
+		//Thread.sleep(2000);
 		
-		Scanner sc = new Scanner(System.in);
-		sc.nextLine();
+		driver.findElement(By.name("commit")).click();
 		
 		driver.close();
 	}

@@ -10,7 +10,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterClass;
 
 public class SeleccionarCategoriaTest {
-	String driverPath = "C:\\Academia SDET\\libs\\chromedriver.exe";
+	//String driverPath = "C:\\Academia SDET\\libs\\chromedriver.exe";
 	String baseUrl = "https://demosite.appvance.com/";
 	WebDriver driver;
 	String productos[] = {"ruby-on-rails-tote?taxon_id=3","ruby-on-rails-mug?taxon_id=4","ruby-on-rails-baseball-jersey?taxon_id=5","spree-bag","spree-tote"};
@@ -34,7 +34,7 @@ public class SeleccionarCategoriaTest {
   }
   @BeforeClass
   public void beforeClass() {
-	  System.setProperty("webdriver.chrome.driver", driverPath);
+	  //System.setProperty("webdriver.chrome.driver", driverPath);
 	  driver = new ChromeDriver();
 	  driver.get(baseUrl);
   }

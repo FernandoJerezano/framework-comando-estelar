@@ -65,9 +65,6 @@ public class RealizarCompraConRegistroTest {
 		
 		driver.findElement(By.name("commit")).click();
 		
-		Scanner sc = new Scanner(System.in);
-		sc.nextLine();
-		
 		driver.close();
 	}
 	

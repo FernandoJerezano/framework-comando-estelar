@@ -21,6 +21,8 @@ public class CrearCuentaNuevaTest {
 	@Test 
 	public void crearCuentaNueva() {
 		
+		correo = getUsername();
+		
 		driver.findElement(By.xpath("//a[@href='/']")).click();
 		
 		WebElement linkLogin = driver.findElement(By.xpath("//a[@href='/login']"));
@@ -38,5 +40,9 @@ public class CrearCuentaNuevaTest {
 		//System.setProperty("webdriver.chrome.driver", driverPath);
 		driver = new ChromeDriver();
 		driver.get(baseUrl);
+	}
+	
+	public String getUsername() {
+		return "fernando"+System.currentTimeMillis()+"@mail.com";
 	}
 }

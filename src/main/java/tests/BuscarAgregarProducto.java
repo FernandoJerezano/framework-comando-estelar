@@ -11,7 +11,7 @@ import org.testng.annotations.AfterClass;
 
 public class BuscarAgregarProducto {
 
-	String driverPath = "C:\\Academia SDET\\libs\\chromedriver.exe";
+	//String driverPath = "C:\\Academia SDET\\libs\\chromedriver.exe";
 	String baseUrl = "https://demosite.appvance.com/";
 	WebDriver driver;
 	String productos[] = {"ruby-on-rails-tote","ruby-on-rails-bag","ruby-on-rails-baseball-jersey","spree-bag","spree-tote"};
@@ -31,7 +31,7 @@ public class BuscarAgregarProducto {
   
   @BeforeClass
   public void beforeClass() {
-	  System.setProperty("webdriver.chrome.driver", driverPath);
+	  //System.setProperty("webdriver.chrome.driver", driverPath);
 	  driver = new ChromeDriver();
 	  driver.get(baseUrl);
   }

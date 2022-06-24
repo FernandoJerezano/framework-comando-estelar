@@ -9,7 +9,7 @@ import org.testng.annotations.AfterClass;
 
 public class LoginTest {
 	
-	String driverPath = "C:\\Academia SDET\\libs\\chromedriver.exe";
+	//String driverPath = "C:\\Academia SDET\\libs\\chromedriver.exe";
 	String baseUrl = "https://demosite.appvance.com/";
 	WebDriver driver;
 	public static final String correoTest = "logintestcase@gmail.com";
@@ -24,7 +24,7 @@ public class LoginTest {
   }
   @BeforeClass
   public void beforeClass() {
-	  System.setProperty("webdriver.chrome.driver", driverPath);
+	  //System.setProperty("webdriver.chrome.driver", driverPath);
 		driver = new ChromeDriver();
 		driver.get(baseUrl);
 		

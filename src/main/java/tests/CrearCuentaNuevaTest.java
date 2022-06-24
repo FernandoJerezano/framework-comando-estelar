@@ -11,7 +11,7 @@ import classes.CrearCuenta;
 
 public class CrearCuentaNuevaTest {
 	
-	String driverPath = "C:\\Academia SDET\\libs\\chromedriver.exe";
+	//String driverPath = "C:\\Academia SDET\\libs\\chromedriver.exe";
 	String baseUrl = "https://demosite.appvance.com/";
 	WebDriver driver;
 	
@@ -35,7 +35,7 @@ public class CrearCuentaNuevaTest {
 
 	@BeforeClass
 	public void beforeClass() {
-		System.setProperty("webdriver.chrome.driver", driverPath);
+		//System.setProperty("webdriver.chrome.driver", driverPath);
 		driver = new ChromeDriver();
 		driver.get(baseUrl);
 	}

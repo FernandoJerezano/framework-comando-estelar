@@ -36,6 +36,5 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="con" path="org.testng.TESTNG_CONTAINER"/>
-	<classpathentry kind="lib" path="C:/Academia SDET/libs/selenium-server-4.2.2.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

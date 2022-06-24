@@ -11,7 +11,7 @@ import classes.CrearCuenta;
 
 public class CrearCuentaNuevaTest {
 	
-	String driverPath = "C:\\Users\\fernando.jerezano\\eclipse-workspace\\libs\\chromedriver_win32\\chromedriver.exe";
+	String driverPath = "C:\\Academia2022\\ComandoEstelar\\chromedriver.exe";
 	String baseUrl = "https://demosite.appvance.com/";
 	WebDriver driver;
 	

@@ -3,12 +3,22 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
+<<<<<<< HEAD
       <class name="tests.RealizarCompraSinRegistroTest">
         <methods>
           <include name="realizaCompraConRegistro"/>
           <include name="beforeClass"/>
         </methods>
       </class> <!-- tests.RealizarCompraSinRegistroTest -->
+=======
+      <class name="tests.SeleccionarCategoriaTest">
+        <methods>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+          <include name="f"/>
+        </methods>
+      </class> <!-- tests.SeleccionarCategoriaTest -->
+>>>>>>> Gonzalezr20220623b
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -2,6 +2,7 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite started-at="2022-06-23T21:13:36 CDT" name="Default suite" finished-at="2022-06-23T21:13:48 CDT" duration-ms="11873">
     <groups>
     </groups>
@@ -86,6 +87,26 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </reporter-output>
         </test-method> <!-- realizaCompraConRegistro -->
       </class> <!-- tests.RealizarCompraSinRegistroTest -->
+=======
+  <suite started-at="2022-06-24T03:04:25 CDT" name="Default suite" finished-at="2022-06-24T03:04:34 CDT" duration-ms="9220">
+    <groups>
+    </groups>
+    <test started-at="2022-06-24T03:04:25 CDT" name="Default test" finished-at="2022-06-24T03:04:34 CDT" duration-ms="9220">
+      <class name="tests.BuscarAgregarProducto">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:tests.BuscarAgregarProducto@e056f20]" started-at="2022-06-24T03:04:25 CDT" name="beforeClass" finished-at="2022-06-24T03:04:32 CDT" duration-ms="7080" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="f()[pri:0, instance:tests.BuscarAgregarProducto@e056f20]" started-at="2022-06-24T03:04:32 CDT" name="f" finished-at="2022-06-24T03:04:34 CDT" duration-ms="2092" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:tests.BuscarAgregarProducto@e056f20]" started-at="2022-06-24T03:04:34 CDT" name="afterClass" finished-at="2022-06-24T03:04:34 CDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- tests.BuscarAgregarProducto -->
+>>>>>>> Gonzalezr20220623b
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
